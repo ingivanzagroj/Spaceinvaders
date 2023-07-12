@@ -8,7 +8,7 @@ Se usó la librería Pygame para la creación del juego.
 
 Requerimientos minimos para lanzar el juego:
 
-1. Python 3.10.5 (Version de desarrollo del código). Aunque puede probarlo con
+1. Python 3.10.5 (Version de desarrollo del código). Aunque puede probarlo con una version de python 3.X.X
 2. Instalar pygame abriendo su terminal para ejecutar el comando: pip install pygame. En este proyecto se usó pygame 2.5.0.
 3. IDE(Opcional. Puede usar VSCode por ejemplo)
 
