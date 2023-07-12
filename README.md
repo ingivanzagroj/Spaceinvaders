@@ -19,8 +19,11 @@ El juego iniciará dandole la bienvenida al jugador, con una lista de instruccio
 
 Teclas usadas:
 
-Para mover la nave:
+*Para mover la nave:
 tecla UP, DOWN, LEFT, RIGTH
 
-Para continuar y arrancar la partida\_
+*Para disparar:
+tecla Espacio
+
+*Para continuar y arrancar la partida:
 tecla Enter
