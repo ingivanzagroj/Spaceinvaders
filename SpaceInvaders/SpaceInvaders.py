@@ -144,11 +144,13 @@ def show_go_screen():
 			if event.type == pygame.KEYDOWN:
 				if event.key == pygame.K_RETURN:
 					waiting = False
+					init_sound.stop()
 
 # Cargar fondo.
 fondo = pygame.image.load("assets/Space-Wallpaper.png").convert()
 
 # Cargar sonidos
+init_sound = pygame.mixer.Sound("assets/Drumsatellite.wav")
 misil_sound = pygame.mixer.Sound("assets/Crunch.wav")
 explosion_misil_sound = pygame.mixer.Sound("assets/Teleport2.wav")
 #pygame.mixer.music.load("assets/music.ogg")
@@ -161,20 +163,6 @@ explosion_sound = pygame.mixer.Sound("assets/Teleport2.wav")
 pygame.mixer.music.set_volume(0.1)
 
 
-#all_sprites = pygame.sprite.Group()  #Creamos el grupo de todos los sprites
-#enemy_list = pygame.sprite.Group()
-#bullets = pygame.sprite.Group()
-
-
-#player = Player()  #Creamos nuestra instancia jugador
-#all_sprites.add(player)  #Agregamos a nuestro jugador al grupo de sprites
-
-#for i in range(5):
-#	enemy = Enemy()
-#	all_sprites.add(enemy)  #Agregamos a nuestro enemigo al grupo de sprites
-#	enemy_list.add(enemy)
-
-
 # Game Loop donde programamos la lógica de ejecución del juego 
 running = True
 init_game = True
@@ -182,6 +170,7 @@ game_over = False
 
 while running:
 	if init_game:
+		init_sound.play()
 		show_go_screen()
 		init_game = False
 		game_over = False
